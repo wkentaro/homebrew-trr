@@ -14,13 +14,13 @@ Installing Homebrew-trr Formulae
 ---
 It's simple like below.
 ```
-$ brew tap greeeenkew/trr
+$ brew tap wkentaro/trr
 $ brew install <formula>
 ```
 
 To install via URL:
 ```
-$ brew install https://raw.github.com/greeeenkew/homebrew-trr/master/<formula>.rb
+$ brew install https://raw.github.com/wkentaro/homebrew-trr/master/<formula>.rb
 ```
 
 
