@@ -27,12 +27,13 @@ class Trr < Formula
   end
 
   def caveats; <<-EOF.undent
-    Add below to your emacs configuration file. (ex. ~/emacs.d/init.el)
+    Please add below lines to your emacs configuration file. (ex. ~/emacs.d/init.el)
 
     (add-to-list 'load-path "#{Formula['apel'].share}/emacs/site-lisp")
     (add-to-list 'load-path "#{share}/emacs/site-lisp")
     (autoload 'trr "#{share}/emacs/site-lisp/trr" nil t)
 
+    Run `emacs --execute "(trr)"` or `M-x trr` in emacs to play TRR.
     EOF
   end
 
