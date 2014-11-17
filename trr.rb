@@ -29,6 +29,7 @@ class Trr < Formula
   def caveats; <<-EOF.undent
     Please add below lines to your emacs configuration file. (ex. ~/emacs.d/init.el)
 
+    (setq TRR:japanese nil)
     (add-to-list 'load-path "#{Formula['apel'].share}/emacs/site-lisp")
     (add-to-list 'load-path "#{share}/emacs/site-lisp")
     (autoload 'trr "#{share}/emacs/site-lisp/trr" nil t)
