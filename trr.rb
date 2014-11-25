@@ -34,7 +34,7 @@ class Trr < Formula
     (add-to-list 'load-path "#{share}/emacs/site-lisp")
     (autoload 'trr "#{share}/emacs/site-lisp/trr" nil t)
 
-    Run `emacs --execute "(trr)"` or `M-x trr` in emacs to play TRR.
+    Do `M-x trr` in emacs to play TRR.
     EOF
   end
 
