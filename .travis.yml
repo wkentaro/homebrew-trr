@@ -1,0 +1,9 @@
+language: objective-c
+before_script:
+  - rvm use system
+  - export PATH="/System/Library/Frameworks/Ruby.framework/Versions/${CASK_RUBY_TEST_VERSION}/usr/bin":"$PATH"
+script: source .travis.sh
+notifications:
+  email:
+    on_success: always
+    on_failure: always
