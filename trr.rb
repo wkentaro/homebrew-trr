@@ -33,8 +33,6 @@ class Trr < Formula
     (add-to-list 'load-path "#{Formula['apel'].share}/emacs/site-lisp")
     (add-to-list 'load-path "#{share}/emacs/site-lisp")
     (autoload 'trr "#{share}/emacs/site-lisp/trr" nil t)
-
-    Do `M-x trr` in emacs to play TRR.
     EOF
   end
 
