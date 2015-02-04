@@ -1,4 +1,4 @@
-Homebrew-trr
+Homebrew-trr [![Build Status](https://api.travis-ci.org/wkentaro/homebrew-trr.png)](https://travis-ci.org/wkentaro/homebrew-trr)
 ===========
 
 This repository contains TRR (typing software on Emacs) as formula for
