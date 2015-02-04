@@ -1,7 +1,7 @@
 Homebrew-trr
 ===========
 
-This repository contains TRR (typing software on EMACS) as formula for
+This repository contains TRR (typing software on Emacs) as formula for
 [Homebrew](https://github.com/Homebrew/homebrew).
 
 Current Versions
@@ -11,16 +11,23 @@ Current Versions
 
 Installing Homebrew-trr Formulae
 ---
-It's simple like below.
+It's simple like below:
+
 ```bash
 $ brew tap wkentaro/trr
-$ brew install <formula>
-$ # brew install trr  # for TRR (typing software on EMACS)
+
+$ # brew install <formula>
+$ brew install trr  # for TRR (typing software on Emacs)
+
+# after the installation, play trr
+$ emacs -f trr
 ```
 
 To install via URL:
+
 ```bash
-$ brew install https://raw.github.com/wkentaro/homebrew-trr/master/<formula>.rb
+$ # brew install https://raw.github.com/wkentaro/homebrew-trr/master/<formula>.rb
+$ brew install https://raw.github.com/wkentaro/homebrew-trr/master/trr.rb
 ```
 
 
