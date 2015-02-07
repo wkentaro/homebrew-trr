@@ -21,18 +21,23 @@ class Trr < Formula
     print "Email address?: "
     email_adder = gets.chomp
 
+    # texts for playing trr
+    texts = "The_Constitution_Of_JAPAN Constitution_of_the_USA Iccad_90 C_programs Elisp_programs Java_programs Ocaml_programs Python_programs"
+
     system "make", "all", "installer=#{email_adder}",
                           "japanese=nil",
                           "LISPDIR=#{share}/emacs/site-lisp",
                           "TRRDIR=#{prefix}",
                           "INFODIR=#{info}",
-                          "BINDIR=#{bin}"
+                          "BINDIR=#{bin}",
+                          "TEXTS=#{texts}"
     system "make", "install", "installer=#{email_adder}",
                               "japanese=nil",
                               "LISPDIR=#{share}/emacs/site-lisp",
                               "TRRDIR=#{prefix}",
                               "INFODIR=#{info}",
-                              "BINDIR=#{bin}"
+                              "BINDIR=#{bin}",
+                              "TEXTS=#{texts}"
     cp "record/*" "#{prefix}/record/"
   end
 
