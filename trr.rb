@@ -10,18 +10,17 @@ class Trr < Formula
   depends_on "nkf" => :build
 
   def install
-    system "make", "clean"
-    cp Dir["#{Formula['apel'].share}/emacs/site-lisp/*.elc"], buildpath
-
     # The file "CONTENTS" is firstly encoded to EUC-JP.
     # This encodes it to UTF-8 to avoid garbled characters.
     system "nkf", "-w", "--overwrite", "#{buildpath}/CONTENTS"
 
+    system "make", "clean"
+    cp Dir["#{Formula['apel'].share}/emacs/site-lisp/*.elc"], buildpath
+
     # texts for playing trr
     texts = "The_Constitution_Of_JAPAN Constitution_of_the_USA Iccad_90 C_programs Elisp_programs Java_programs Ocaml_programs Python_programs"
 
-    inreplace "Makefile", "japanese = t", "japanese = nil"
-
+    inreplace "#{buildpath}/Makefile", "japanese = t", "japanese = nil"
     system "make", "all", "LISPDIR=#{share}/emacs/site-lisp",
                           "TRRDIR=#{prefix}",
                           "INFODIR=#{info}",
@@ -32,7 +31,8 @@ class Trr < Formula
                               "INFODIR=#{info}",
                               "BINDIR=#{bin}",
                               "TEXTS=#{texts}"
-    cp "record/*" "#{prefix}/record/"
+
+    cp Dir["record/*"], "#{prefix}/record/"
   end
 
   def caveats; <<-EOF.undent
