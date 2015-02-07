@@ -14,6 +14,21 @@ class Trr < Formula
     # This encodes it to UTF-8 to avoid garbled characters.
     system "nkf", "-w", "--overwrite", "#{buildpath}/CONTENTS"
 
+    # translate Japanese to English
+    inreplace "#{buildpath}/CONTENTS", "ふつう", "Normal"
+    inreplace "#{buildpath}/CONTENTS", "やや難", "Hard"
+    inreplace "#{buildpath}/CONTENTS", "やや何", "Hard"
+    inreplace "#{buildpath}/CONTENTS", "推奨", "Recommend"
+    inreplace "#{buildpath}/CONTENTS", "安定している", "Stable"
+    inreplace "#{buildpath}/CONTENTS", "見出しが多い", "Lots_of_headers"
+    inreplace "#{buildpath}/CONTENTS", "C言語", "C_programs"
+    inreplace "#{buildpath}/CONTENTS", "括弧が多い", "Lots_of_parentheses"
+    inreplace "#{buildpath}/CONTENTS", "Java言語", "Java_programs"
+    inreplace "#{buildpath}/CONTENTS", "いくつかの記号", "Some_symbols"
+    inreplace "#{buildpath}/CONTENTS", "Python言語", "Python_programs"
+    # wrong text filename
+    inreplace "#{buildpath}/CONTENTS", "EmacsLisp", "Elisp_programs"
+
     system "make", "clean"
     cp Dir["#{Formula['apel'].share}/emacs/site-lisp/*.elc"], buildpath
 
