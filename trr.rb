@@ -20,14 +20,14 @@ class Trr < Formula
     # texts for playing trr
     texts = "The_Constitution_Of_JAPAN Constitution_of_the_USA Iccad_90 C_programs Elisp_programs Java_programs Ocaml_programs Python_programs"
 
-    system "make", "all", "japanese=nil",
-                          "LISPDIR=#{share}/emacs/site-lisp",
+    inreplace "Makefile", "japanese = t", "japanese = nil"
+
+    system "make", "all", "LISPDIR=#{share}/emacs/site-lisp",
                           "TRRDIR=#{prefix}",
                           "INFODIR=#{info}",
                           "BINDIR=#{bin}",
                           "TEXTS=#{texts}"
-    system "make", "install", "japanese=nil",
-                              "LISPDIR=#{share}/emacs/site-lisp",
+    system "make", "install", "LISPDIR=#{share}/emacs/site-lisp",
                               "TRRDIR=#{prefix}",
                               "INFODIR=#{info}",
                               "BINDIR=#{bin}",
