@@ -1,5 +1,3 @@
-require "formula"
-
 class Apel < Formula
   homepage "http://git.chise.org/elisp/apel/"
   url "http://git.chise.org/elisp/dist/apel/apel-10.8.tar.gz"
@@ -12,7 +10,7 @@ class Apel < Formula
     system "make", "install", "PREFIX=#{prefix}",
            "LISPDIR=#{share}/emacs/site-lisp",
            "VERSION_SPECIFIC_LISPDIR=#{share}/emacs/site-lisp"
-    (share/'emacs/site-lisp').install Dir["#{share}/emacs/site-lisp/emu/*"],
+    (share/"emacs/site-lisp").install Dir["#{share}/emacs/site-lisp/emu/*"],
                                       Dir["#{share}/emacs/site-lisp/apel/*"]
   end
 
@@ -26,5 +24,5 @@ class Apel < Formula
 
     assert_equal "0", shell_output("emacs -batch -l #{program}").strip
   end
-
 end
+
