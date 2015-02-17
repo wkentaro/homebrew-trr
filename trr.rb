@@ -1,5 +1,3 @@
-require "formula"
-
 class Trr < Formula
   homepage "https://code.google.com/p/trr22/"
   url "https://trr22.googlecode.com/files/trr22_0.99-5.tar.gz"
@@ -32,7 +30,7 @@ class Trr < Formula
     inreplace "#{buildpath}/CONTENTS", "EmacsLisp", "Elisp_programs"
 
     system "make", "clean"
-    cp Dir["#{Formula['apel'].share}/emacs/site-lisp/*.elc"], buildpath
+    cp Dir["#{Formula["apel"].share}/emacs/site-lisp/*.elc"], buildpath
 
     # texts for playing trr
     texts = "The_Constitution_Of_JAPAN Constitution_of_the_USA Iccad_90 C_programs Elisp_programs Java_programs Ocaml_programs Python_programs"
@@ -54,8 +52,7 @@ class Trr < Formula
 
   def caveats; <<-EOF.undent
     Please add below lines to your emacs configuration file. (ex. ~/emacs.d/init.el)
-
-    (add-to-list 'load-path "#{Formula['apel'].share}/emacs/site-lisp")
+    (add-to-list 'load-path "#{Formula["apel"].share}/emacs/site-lisp")
     (add-to-list 'load-path "#{share}/emacs/site-lisp")
     (autoload 'trr "#{share}/emacs/site-lisp/trr" nil t)
     EOF
@@ -64,7 +61,7 @@ class Trr < Formula
   test do
     program = testpath/"test-trr.el"
     program.write <<-EOS.undent
-      (add-to-list 'load-path "#{Formula['apel'].share}/emacs/site-lisp")
+      (add-to-list 'load-path "#{Formula["apel"].share}/emacs/site-lisp")
       (add-to-list 'load-path "#{share}/emacs/site-lisp")
       (require 'trr)
       (print (TRR:trainer-menu-buffer))
@@ -72,5 +69,5 @@ class Trr < Formula
 
     assert_equal "\"Type & Menu\"", shell_output("emacs -batch -l #{program}").strip
   end
-
 end
+
