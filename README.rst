@@ -3,7 +3,13 @@ homebrew-trr
 ============
 
 .. image :: https://api.travis-ci.org/wkentaro/homebrew-trr.png
+  :alt: Build Status
   :target: https://travis-ci.org/wkentaro/homebrew-trr
+
+.. image :: https://badges.gitter.im/Join%20Chat.svg
+  :alt: Gitter
+  :target: https://gitter.im/wkentaro/homebrew-trr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
+
 
 This repository contains TRR (typing software on Emacs) as formula for
 `Homebrew <https://github.com/Homebrew/homebrew>`_.
