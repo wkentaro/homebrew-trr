@@ -2,7 +2,7 @@
 homebrew-trr
 ============
 
-.. image :: https://api.travis-ci.org/wkentaro/homebrew-trr.png
+.. image :: https://travis-ci.org/wkentaro/homebrew-trr.svg
   :alt: Build Status
   :target: https://travis-ci.org/wkentaro/homebrew-trr
 
