@@ -6,11 +6,11 @@ homebrew-trr
   :alt: Build Status
   :target: https://travis-ci.org/wkentaro/homebrew-trr
 
-.. image :: https://img.shields.io/badge/trr-22.0.99.5-brightgreen.svg
+.. image :: https://img.shields.io/badge/trr-22.0.99.5-blue.svg
   :alt: Trr Version
   :target: https://code.google.com/p/trr22/
 
-.. image :: https://img.shields.io/badge/apel-10.8-brightgreen.svg
+.. image :: https://img.shields.io/badge/apel-10.8-blue.svg
   :alt: Apel Version
   :target: http://git.chise.org/elisp/dist/apel/
 
