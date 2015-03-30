@@ -10,6 +10,13 @@ homebrew-trr
   :alt: Gitter
   :target: https://gitter.im/wkentaro/homebrew-trr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
 
+.. image :: https://img.shields.io/badge/trr-22.0.99.5-brightgreen.svg
+  :alt: Trr Version
+  :target: https://code.google.com/p/trr22/
+
+.. image :: https://img.shields.io/badge/apel-10.8-brightgreen.svg
+  :alt: Apel Version
+  :target: http://git.chise.org/elisp/dist/apel/
 
 This repository contains TRR (typing software on Emacs) as formula for
 `Homebrew <https://github.com/Homebrew/homebrew>`_.
