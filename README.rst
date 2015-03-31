@@ -12,7 +12,7 @@ homebrew-trr
 
 .. image :: https://img.shields.io/badge/apel-10.8-blue.svg
   :alt: Apel Version
-  :target: http://git.chise.org/elisp/dist/apel/
+  :target: http://git.chise.org/elisp/apel/
 
 .. image :: https://badges.gitter.im/Join%20Chat.svg
   :alt: Gitter
