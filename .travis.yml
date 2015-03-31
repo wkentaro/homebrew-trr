@@ -2,7 +2,15 @@ language: objective-c
 before_script:
   - rvm use system
   - export PATH="/System/Library/Frameworks/Ruby.framework/Versions/${CASK_RUBY_TEST_VERSION}/usr/bin":"$PATH"
-script: source .travis.sh
+script:
+  - mv apel.rb /usr/local/Library/Formula/
+  - mv trr.rb /usr/local/Library/Formula/
+  - brew update
+  - brew audit --strict apel || { echo "brew audit failed" ; exit 1 ; }
+  - brew audit --strict trr || { echo "brew audit failed" ; exit 1 ; }
+  - brew install trr || { echo "brew install failed" ; exit 1 ; }
+  - brew test apel || { echo "brew test failed" ; exit 1 ; }
+  - brew test trr || { echo "brew test failed" ; exit 1 ; }
 notifications:
   email:
     on_success: always
