@@ -1,7 +1,7 @@
 class Apel < Formula
   homepage "http://git.chise.org/elisp/apel/"
   url "http://git.chise.org/elisp/dist/apel/apel-10.8.tar.gz"
-  sha1 "089c18ae006df093aa2edaeb486bfaead6ac4918"
+  sha256 "a511cc36bb51dc32b4915c9e03c67a994060b3156ceeab6fafa0be7874b9ccfe"
 
   def install
     system "make", "PREFIX=#{prefix}",
