@@ -22,6 +22,13 @@ homebrew-trr
 This repository contains TRR (typing software on Emacs) as formula for
 `Homebrew <https://github.com/Homebrew/homebrew>`_.
 
+
+THIS IS OLD PROJECT
+===================
+| Formulae in this repo have been **ALREADY MERGED** to `Homebrew <https://github.com/Homebrew/homebrew>`_.
+| You can download TRR by ``brew install trr`` without ``tap`` this repo.
+
+
 Current Versions
 ================
 * trr 22.0.99.5
