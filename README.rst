@@ -10,10 +10,6 @@ homebrew-trr
   :alt: Trr Version
   :target: https://code.google.com/p/trr22/
 
-.. image :: https://badges.gitter.im/Join%20Chat.svg
-  :alt: Gitter
-  :target: https://gitter.im/wkentaro/homebrew-trr?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
-
 
 This repository contains TRR (typing software on Emacs) **English Version** as formula for
 `Homebrew <https://github.com/Homebrew/homebrew>`_.
