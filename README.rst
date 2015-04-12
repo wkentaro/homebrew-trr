@@ -27,7 +27,7 @@ It's simple like below:
 .. code-block :: sh
 
   $ brew tap wkentaro/trr
-  $ brew install wkentaro/trr
+  $ brew install wkentaro/trr/trr
 
   # after the installation, play trr
   $ emacs -f trr
