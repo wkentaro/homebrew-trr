@@ -39,6 +39,12 @@ To install via URL:
 
   $ brew install https://raw.github.com/wkentaro/homebrew-trr/master/trr.rb
 
+Screencast of installation:
+
+.. image:: assets/install_guide.gif
+   :alt: Install Guide
+   :target: assets/install_guide.gif
+
 
 Docs
 ====
