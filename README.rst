@@ -1,3 +1,5 @@
+**THIS PROJECT IS MERGED TO HOMEBREW/HOMEBREW**
+
 ============
 homebrew-trr
 ============
